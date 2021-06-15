@@ -10,7 +10,7 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  flex-grow: 4;
+  flex-grow: 10;
 }
 
 .right-dashboard {
@@ -63,6 +63,14 @@ h3 {
   justify-content: space-between;
   align-items: center;
   margin: 12px 0px;
+}
+
+.description h3 {
+  font-size: x-large;
+}
+
+.description h4 {
+  font-size: large;
 }
 
 .item-table {
