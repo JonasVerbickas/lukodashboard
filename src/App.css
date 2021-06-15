@@ -1,0 +1,224 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.left-dashboard {
+  background-color: #f4f1bb;
+  margin: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-dashboard {
+  margin: 10px;
+}
+
+.image-row {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+}
+
+.left-dashboard img {
+  width: 100%;
+  height: auto;
+}
+
+.image-col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 8px;
+}
+
+.headers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 6px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0px;
+}
+
+.item-table {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+  background-color: white;
+  margin: 16px 0;
+}
+
+.table-item {
+  padding: 0 5px;
+}
+
+td {
+  padding: 2px 5px;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.button-subrow {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+.button-row button {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.SCO {
+  display: flex;
+  flex-direction: column;
+  background: #e6ebe0;
+  color: #c00200;
+  margin: 16px 0;
+}
+
+.SCO-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px;
+  height: 40px;
+}
+
+.right-dashboard h1,
+.right-dashboard h2,
+.right-dashboard h3,
+.right-dashboard h4 {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.right-dashboard button {
+  padding: 10px 16px;
+}
+
+.right-dashboard-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.disappear-while-big {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .image-row {
+    flex-direction: column;
+  }
+
+  .disappearing-shit {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .button-row {
+    flex-direction: column;
+  }
+
+  .SCO {
+    height: 10vh;
+  }
+
+  .SCO-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button-subrow {
+    height: 70px;
+    margin-top: 16px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .left-dashboard .headers {
+    font-size: x-small;
+  }
+  .right-dashboard-header h1 {
+    font-size: large;
+  }
+
+  .right-dashboard-header button {
+    font-size: small;
+    padding: 8px 12px;
+  }
+
+  .right-dashboard .SCO {
+    font-size: small;
+  }
+
+  .left-dashboard .image-col {
+    font-size: x-small;
+    margin: 5px;
+  }
+
+  .left-dashboard .item-table {
+    font-size: x-small;
+    flex-grow: 1;
+  }
+  .left-dashboard {
+    margin: 0;
+    padding: 6px;
+  }
+
+  .left-dashboard button {
+    font-size: large;
+  }
+
+  .right-dashboard {
+    margin: 0 5px;
+  }
+
+  .dashboard {
+    margin: 0;
+  }
+
+  .disappear-while-big {
+    display: inherit;
+  }
+}
