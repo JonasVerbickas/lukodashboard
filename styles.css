@@ -163,11 +163,10 @@ button {
 
 @media only screen and (max-width: 1000px) {
   .left-dashboard {
-    flex-grow: 1;
     margin: 0;
+    flex-grow: 1;
   }
   .right-dashboard {
-    flex-grow: 1;
     width: 250px;
   }
 
@@ -199,7 +198,7 @@ button {
 
   .right-dashboard .SCO {
     font-size: small;
-    height: 10s0px;
+    height: 100px;
   }
 
   .left-dashboard .image-col {
@@ -241,7 +240,7 @@ button {
   align-items: center;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
   .disappear-below-medium {
     display: inherit !important;
   }
