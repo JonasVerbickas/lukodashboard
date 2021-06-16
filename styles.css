@@ -8,7 +8,7 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  width: calc(100vw - 200px);
 }
 
 .right-dashboard {
@@ -138,6 +138,7 @@ h4 {
 @media only screen and (max-width: 900px) {
   .left-dashboard {
     margin: 0;
+    width: auto;
     flex-grow: 1;
   }
 
@@ -155,6 +156,7 @@ h4 {
 
   .image-col > img {
     max-height: calc(100% - 50px);
+    object-fit: cover;
   }
 
   .disappearing-while-small {
