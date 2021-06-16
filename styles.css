@@ -27,6 +27,8 @@
   text-align: center;
   margin: 6px;
   flex-grow: 1;
+  margin: auto 0;
+  max-height: 100%;
 }
 
 .image-col > img {
@@ -142,6 +144,7 @@ h4 {
   .images-to-compare {
     flex-direction: column;
     max-height: calc(100vh - 370px);
+    justify-content: space-evenly;
   }
 
   .image-col {
