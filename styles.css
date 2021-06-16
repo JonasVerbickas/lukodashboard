@@ -8,7 +8,7 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  width: calc(100vw - 200px);
+  width: calc(100vw - 310px);
 }
 
 .right-dashboard {
@@ -130,12 +130,11 @@ h4 {
   color: white;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   .left-dashboard {
     margin: 0;
     width: auto;
     flex-grow: 1;
-    min-width: 400px;
   }
 
   .images-to-compare {
@@ -152,7 +151,7 @@ h4 {
 
   .image-col > img {
     max-height: calc(100% - 50px);
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .disappearing-while-small {
@@ -184,6 +183,8 @@ h4 {
 
   .item-table {
     flex-grow: 1;
+    gap: 0;
+    overflow: auto;
   }
 
   .dashboard {
