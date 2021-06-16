@@ -24,7 +24,7 @@ function App() {
           <h1>Kasa</h1>
           <h3>RO123123</h3>
         </div>
-        <div className="image-row">
+        <div className="images-to-compare">
           <div className="image-col">
             <img src={ROI}></img>
             <h2>Received</h2>

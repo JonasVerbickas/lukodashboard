@@ -6,7 +6,6 @@
 
 .left-dashboard {
   background-color: #fae6d6;
-  margin-right: 16px;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -17,35 +16,25 @@
   margin: 10px;
 }
 
-.image-row {
+.images-to-compare {
   display: flex;
-  flex-direction: row;
   background-color: white;
-  align-items: center;
 }
 
 .image-col {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 8px;
+  margin: 6px;
   flex-grow: 1;
 }
 
-.headers {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 6px;
-}
-
 h3 {
-  font-size: x-large !important;
+  font-size: large !important;
   font-weight: normal;
 }
 h4 {
-  font-size: large !important;
+  font-size: medium !important;
 }
 
 .description {
@@ -61,17 +50,15 @@ h4 {
   grid-template-columns: repeat(3, auto);
   align-items: center;
   background-color: white;
-  padding: 10px 10px;
+  padding: 10px 20px;
   grid-gap: 10px;
   height: 100%;
-  margin: 0;
 }
 
 .button-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch !important;
 }
 
 .button-subrow {
@@ -91,7 +78,7 @@ h4 {
   flex-grow: 1;
 }
 
-.SCO-column {
+.SCO-cell {
   display: flex;
   flex-direction: column;
   background: #fae6d6;
@@ -113,6 +100,7 @@ h4 {
 .right-dashboard h3,
 .right-dashboard h4 {
   margin: 0;
+  padding: 0 5px;
 }
 
 .right-dashboard-header {
@@ -147,12 +135,12 @@ h4 {
     flex-grow: 0;
   }
 
-  .image-row {
+  .images-to-compare {
     flex-direction: column;
   }
 
   .disappearing-while-small {
-    display: none;
+    display: none !important;
   }
 
   .button-row {
@@ -168,7 +156,7 @@ h4 {
     font-size: x-small;
   }
 
-  .right-dashboard .SCO-column {
+  .right-dashboard .SCO-cell {
     font-size: small;
     height: 100px;
   }
@@ -179,7 +167,7 @@ h4 {
   }
 
   .item-table {
-    margin: auto;
+    flex-grow: 1;
   }
 
   .dashboard {
@@ -187,33 +175,8 @@ h4 {
   }
 
   .disappear-while-big {
-    display: inherit;
+    display: inherit !important;
   }
-}
-
-/* .swiper-container {
-    width: 100%;
-    height: 100%;
-  } */
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
 
 @media only screen and (min-width: 1100px) {
