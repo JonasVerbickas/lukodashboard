@@ -1,0 +1,22 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scipts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonasVerbickas/lukodashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonasVerbickas/lukodashboard/issues"
+  },
+  "homepage": "https://github.com/JonasVerbickas/lukodashboard#readme",
+  "dependencies": {
+    "swiper": "^6.7.0"
+  }
+}
