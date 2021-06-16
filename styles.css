@@ -8,7 +8,7 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  width: calc(100vw - 310px);
+  flex-grow: 1;
 }
 
 .right-dashboard {
@@ -33,6 +33,8 @@
 
 .image-col > img {
   object-fit: contain;
+  min-width: 0;
+  min-height: 0;
 }
 
 h3 {
@@ -150,7 +152,6 @@ h4 {
   }
 
   .image-col > img {
-    max-height: calc(100% - 50px);
     object-fit: contain;
   }
 
