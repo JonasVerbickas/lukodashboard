@@ -4,11 +4,11 @@ import "./App.css";
 function SCO() {
   return (
     <div className="SCO">
-      <div className="SCO-row">
+      <div className="SCO-cell-row">
         <h2>Kasa 4</h2>
         <h4>1/1</h4>
       </div>
-      <div className="SCO-row disappearing-shit">
+      <div className="SCO-cell-row disappearing-shit">
         <h4>2014-04-28 13:29:31</h4>
         <h4>RO123123</h4>
       </div>

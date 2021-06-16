@@ -109,7 +109,7 @@ button {
   margin: 16px 0;
 }
 
-.SCO-row {
+.SCO-cell-row {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -162,7 +162,7 @@ button {
     height: 10vh;
   }
 
-  .SCO-row {
+  .SCO-cell-row {
     flex-direction: column;
     align-items: flex-start;
   }

@@ -24,11 +24,6 @@
   align-items: center;
 }
 
-.left-dashboard img {
-  width: auto;
-  height: auto;
-}
-
 .image-col {
   display: flex;
   flex-direction: column;
@@ -67,33 +62,28 @@ h4 {
   align-items: center;
   background-color: white;
   padding: 10px 10px;
+  grid-gap: 10px;
   height: 100%;
-  flex-grow: 1;
-}
-
-.table-item {
-  padding-right: 10px;
-  font-size: x-large;
-}
-
-td {
-  padding: 2px 5px;
+  margin: 0;
 }
 
 .button-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch !important;
 }
 
 .button-subrow {
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
   margin-left: 30px;
+  flex-grow: 1;
 }
 
-button {
+.button-row button {
+  padding: 20px;
+  border-radius: 5px;
   border: none;
   color: white;
   font-weight: bold;
@@ -101,12 +91,7 @@ button {
   flex-grow: 1;
 }
 
-.button-row button {
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.SCO {
+.SCO-column {
   display: flex;
   flex-direction: column;
   background: #fae6d6;
@@ -115,35 +100,30 @@ button {
   padding: 5px;
 }
 
-.SCO-row {
+.SCO-cell-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin: 6px;
-  height: 40px;
 }
 
 .right-dashboard h1,
 .right-dashboard h2,
 .right-dashboard h3,
 .right-dashboard h4 {
-  padding: 0 5px;
   margin: 0;
-}
-
-.right-dashboard button {
-  padding: 10px 16px;
 }
 
 .right-dashboard-header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .disappear-while-big {
-  display: none;
+  display: none !important;
 }
 
 .disappear-below-medium {
@@ -161,13 +141,10 @@ button {
   color: white;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .left-dashboard {
     margin: 0;
-    flex-grow: 1;
-  }
-  .right-dashboard {
-    width: 250px;
+    flex-grow: 0;
   }
 
   .image-row {
@@ -180,30 +157,29 @@ button {
 
   .button-row {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .button-subrow {
-    margin: 0;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
   }
 
   .left-dashboard .headers {
     font-size: x-small;
   }
 
-  .right-dashboard-header button {
-    font-size: small;
-    padding: 8px 12px;
-  }
-
-  .right-dashboard .SCO {
+  .right-dashboard .SCO-column {
     font-size: small;
     height: 100px;
   }
+  .SCO-cell-row {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-  .left-dashboard .image-col {
-    font-size: x-small;
-    margin: 5px;
+  .item-table {
+    margin: auto;
   }
 
   .dashboard {
