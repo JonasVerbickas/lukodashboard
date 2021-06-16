@@ -31,7 +31,7 @@
 
 h3 {
   font-size: large !important;
-  font-weight: normal;
+  font-weight: bold !important;
 }
 h4 {
   font-size: medium !important;
@@ -129,7 +129,7 @@ h4 {
   color: white;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .left-dashboard {
     margin: 0;
     flex-grow: 0;
