@@ -28,7 +28,7 @@
 
 .left-dashboard {
   background-color: #fae6d6;
-  padding: 16px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -41,7 +41,7 @@
 .images-to-compare {
   display: flex;
   background-color: white;
-  height: calc(100vh - 225px);
+  height: calc(100vh - 220px);
 }
 
 .image-col {
@@ -54,11 +54,16 @@
   max-height: 100%;
 }
 
+.image-col > h2 {
+  margin: 4px 0;
+}
+
 .image-col > img {
   object-fit: contain;
   min-width: 0;
   min-height: 0;
 }
+
 h1 {
   font-size: xx-large !important;
 }
