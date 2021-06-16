@@ -191,10 +191,6 @@ h4 {
     max-height: 50%;
   }
 
-  .image-col > img {
-    object-fit: contain;
-  }
-
   .disappear-while-small {
     display: none !important;
   }
