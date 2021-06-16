@@ -10,11 +10,10 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  flex-grow: 10;
+  flex-grow: 1;
 }
 
 .right-dashboard {
-  flex-grow: 1;
   margin: 10px;
 }
 
@@ -46,15 +45,12 @@
   margin-left: 6px;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-}
-
 h3 {
+  font-size: x-large !important;
   font-weight: normal;
+}
+h4 {
+  font-size: large !important;
 }
 
 .description {
@@ -63,14 +59,6 @@ h3 {
   justify-content: space-between;
   align-items: center;
   margin: 12px 0px;
-}
-
-.description h3 {
-  font-size: x-large;
-}
-
-.description h4 {
-  font-size: large;
 }
 
 .item-table {
@@ -124,6 +112,7 @@ button {
   background: #fae6d6;
   color: #c00200;
   margin: 16px 0;
+  padding: 5px;
 }
 
 .SCO-row {
@@ -139,8 +128,8 @@ button {
 .right-dashboard h2,
 .right-dashboard h3,
 .right-dashboard h4 {
-  display: inline-block;
   padding: 0 5px;
+  margin: 0;
 }
 
 .right-dashboard button {
@@ -178,8 +167,8 @@ button {
     margin: 0;
   }
   .right-dashboard {
+    flex-grow: 1;
     width: 250px;
-    flex-grow: 0;
   }
 
   .image-row {
@@ -210,6 +199,7 @@ button {
 
   .right-dashboard .SCO {
     font-size: small;
+    height: 10s0px;
   }
 
   .left-dashboard .image-col {
