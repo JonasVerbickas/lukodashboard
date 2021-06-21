@@ -53,9 +53,6 @@
 
 .image-col > img {
   object-fit: contain;
-  min-width: 0;
-  min-height: 0;
-  width: 100%;
 }
 
 h1 {
