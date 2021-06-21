@@ -162,6 +162,11 @@ h4 {
   color: white;
 }
 
+.selected-SCO {
+  background-color: #c00200;
+  color: white;
+}
+
 @media only screen and (max-width: 850px) {
   .left-dashboard {
     flex-grow: 1;
