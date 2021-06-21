@@ -175,22 +175,22 @@ h4 {
 
 @media only screen and (max-width: 850px) {
   .left-dashboard {
-    margin: 0;
-    width: auto;
     flex-grow: 1;
+    margin: 0;
     padding: 8px;
   }
 
   .images-to-compare {
     flex-direction: column;
-    max-height: calc(100vh - 270px);
+    flex-grow: 1;
+    overflow: hidden;
     justify-content: space-evenly;
   }
 
   .image-col {
-    flex-grow: 0;
+    flex-grow: 1;
     margin: 0;
-    max-height: 50%;
+    overflow: hidden;
   }
 
   .disappear-while-small {
