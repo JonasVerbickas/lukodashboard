@@ -4,8 +4,7 @@
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
+  background: white;
   /* Center slide text vertically */
   display: flex;
   flex-direction: column;
@@ -24,7 +23,6 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  height: 100vh;
 }
 
 .right-dashboard {
@@ -53,25 +51,24 @@
 
 .image-col > img {
   object-fit: contain;
-  min-width: 0;
   min-height: 0;
-  width: 100%;
+  min-width: 0;
 }
 
 h1 {
-  font-size: xx-large !important;
+  font-size: xx-large;
 }
 h2 {
-  font-size: x-large !important;
-  font-weight: 500 !important;
+  font-size: x-large;
+  font-weight: 500;
 }
 h3 {
-  font-size: large !important;
-  font-weight: bold !important;
+  font-size: large;
+  font-weight: bold;
 }
 
 h4 {
-  font-size: medium !important;
+  font-size: medium;
 }
 
 .description {
@@ -110,13 +107,22 @@ h4 {
   flex-grow: 1;
 }
 
+.SCO-root {
+  margin: 16px 0;
+  background: var(--secondary-color);
+  color: var(--main-color);
+}
+
 .SCO-cell {
   display: flex;
   flex-direction: column;
-  background: #fae6d6;
-  color: #c00200;
-  margin: 16px 0;
-  padding: 5px;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+/* Some genius level CSS */
+.SCO-cell > .SCO-cell-row:nth-child(2) {
+  margin-top: 8px;
 }
 
 .SCO-cell-row {
@@ -124,7 +130,6 @@ h4 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 6px;
 }
 
 .right-dashboard h1,
@@ -143,15 +148,15 @@ h4 {
 }
 
 .disappear-while-big {
-  display: none !important;
+  display: none;
 }
 
 .disappear-when-medium {
-  display: none !important;
+  display: none;
 }
 
 .disappear-below-medium {
-  display: inherit !important;
+  display: inherit;
 }
 
 .number-circle {
@@ -186,7 +191,7 @@ h4 {
   }
 
   .disappear-while-small {
-    display: none !important;
+    display: none;
   }
 
   .button-row {
@@ -209,7 +214,7 @@ h4 {
   }
 
   .disappear-while-big {
-    display: inherit !important;
+    display: inherit;
   }
 
   .button-row > button {
@@ -223,6 +228,12 @@ h4 {
   .description {
     margin: 8px 0;
   }
+}
+
+.suspended-SCO {
+  background-color: var(--main-color);
+  color: white;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 950px) {
@@ -244,13 +255,13 @@ h4 {
   }
 
   .disappear-below-medium {
-    display: none !important;
+    display: none;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .disappear-when-medium {
-    display: inherit !important;
+    display: inherit;
   }
 
   .swiper-container {
