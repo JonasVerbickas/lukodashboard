@@ -1,8 +1,3 @@
-:root {
-  --main-color: #c00200;
-  --secondary-color: #fae6d6;
-}
-
 .swiper-container {
   width: 200px;
 }
@@ -10,7 +5,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: white;
+  background: #fff;
   /* Center slide text vertically */
   display: flex;
   flex-direction: column;
@@ -24,7 +19,7 @@
 }
 
 .left-dashboard {
-  background-color: var(--secondary-color);
+  background-color: #fae6d6;
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -58,6 +53,9 @@
 
 .image-col > img {
   object-fit: contain;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
 }
 
 h1 {
@@ -115,8 +113,8 @@ h4 {
 .SCO-cell {
   display: flex;
   flex-direction: column;
-  background: var(--secondary-color);
-  color: var(--main-color);
+  background: #fae6d6;
+  color: #c00200;
   margin: 16px 0;
   padding: 5px;
 }
@@ -162,13 +160,8 @@ h4 {
   border-radius: 50%;
   text-align: center;
   font-size: 32px;
-  border: 2px solid var(--main-color);
-  background-color: var(--main-color);
-  color: white;
-}
-
-.selected-SCO {
-  background-color: var(--main-color);
+  border: 2px solid #c00200;
+  background-color: #c00200;
   color: white;
 }
 
