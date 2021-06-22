@@ -108,6 +108,7 @@ h4 {
 .button-row button {
   padding: 10px 0;
   flex-grow: 1;
+  min-width: 0;
 }
 
 .SCO-root {
