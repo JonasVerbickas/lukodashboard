@@ -9,7 +9,6 @@
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
   background: white;
   /* Center slide text vertically */
   display: flex;
@@ -63,19 +62,19 @@
 }
 
 h1 {
-  font-size: xx-large !important;
+  font-size: xx-large;
 }
 h2 {
-  font-size: x-large !important;
-  font-weight: 500 !important;
+  font-size: x-large;
+  font-weight: 500;
 }
 h3 {
-  font-size: large !important;
-  font-weight: bold !important;
+  font-size: large;
+  font-weight: bold;
 }
 
 h4 {
-  font-size: medium !important;
+  font-size: medium;
 }
 
 .description {
@@ -116,7 +115,6 @@ h4 {
 
 .SCO-root {
   margin: 16px 0;
-
   background: var(--secondary-color);
   color: var(--main-color);
 }
@@ -125,7 +123,12 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 16px;
+  padding: 8px;
+}
+
+/* Some genius level CSS */
+.SCO-cell > .SCO-cell-row:nth-child(2) {
+  margin-top: 8px;
 }
 
 .SCO-cell-row {
@@ -151,15 +154,15 @@ h4 {
 }
 
 .disappear-while-big {
-  display: none !important;
+  display: none;
 }
 
 .disappear-when-medium {
-  display: none !important;
+  display: none;
 }
 
 .disappear-below-medium {
-  display: inherit !important;
+  display: inherit;
 }
 
 .number-circle {
@@ -199,7 +202,7 @@ h4 {
   }
 
   .disappear-while-small {
-    display: none !important;
+    display: none;
   }
 
   .button-row {
@@ -222,7 +225,7 @@ h4 {
   }
 
   .disappear-while-big {
-    display: inherit !important;
+    display: inherit;
   }
 
   .button-row > button {
@@ -263,13 +266,13 @@ h4 {
   }
 
   .disappear-below-medium {
-    display: none !important;
+    display: none;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .disappear-when-medium {
-    display: inherit !important;
+    display: inherit;
   }
 
   .swiper-container {
