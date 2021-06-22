@@ -70,61 +70,70 @@
       <div class="swiper-container mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="SCO-cell selected-SCO">
-              <div class="SCO-cell-row">
-                <h1>Kasa 1</h1>
-                <h4>1/2</h4>
-              </div>
-              <div class="SCO-cell-row disappear-below-medium">
-                <h4 class="disappear-when-medium">2014-04-28</h4>
-                <h4>11:11:11</h4>
-                <h4>RO123123</h4>
-              </div>
-            </div>
-            <div class="SCO-cell">
-              <div class="SCO-cell-row">
-                <h1>Kasa 2</h1>
-                <h4>1/1</h4>
-              </div>
-              <div class="SCO-cell-row disappear-below-medium">
-                <h4 class="disappear-when-medium">2014-04-28</h4>
-                <h4>22:22:22</h4>
-                <h4>RO123123</h4>
+            <div class="SCO-root selected-SCO">
+              <div class="SCO-cell ">
+                <div class="SCO-cell-row">
+                  <h1>Kasa 1</h1>
+                  <h4>1/2</h4>
+                </div>
+                <div class="SCO-cell-row disappear-below-medium">
+                  <h4 class="disappear-when-medium">2014-04-28</h4>
+                  <h4>11:11:11</h4>
+                  <h4>RO123123</h4>
+                </div>
               </div>
             </div>
-            <div class="SCO-cell">
-              <div class="SCO-cell-row">
-                <h1>Kasa 3</h1>
-                <h4>1/1</h4>
+            <div class="SCO-root">
+              <div class="SCO-cell">
+                <div class="SCO-cell-row">
+                  <h1>Kasa 2</h1>
+                  <h4>1/1</h4>
+                </div>
               </div>
-              <div class="SCO-cell-row disappear-below-medium">
-                <h4 class="disappear-when-medium">2014-04-28</h4>
-                <h4>22:22:22</h4>
-                <h4>RO123123</h4>
-              </div>
-            </div>
-            <div class="SCO-cell">
-              <div class="SCO-cell-row">
-                <h1>Kasa 4</h1>
-                <h4>1/1</h4>
-              </div>
-              <div class="SCO-cell-row disappear-below-medium">
-                <h4 class="disappear-when-medium">2014-04-28</h4>
-                <h4>22:22:22</h4>
-                <h4>RO123123</h4>
+              <div class="SCO-cell-row suspended-SCO">
+                <h1>Suspended SCO</h1>
               </div>
             </div>
-            <div class="SCO-cell">
-              <div class="SCO-cell-row">
-                <h1>Kasa 5</h1>
-                <h4>1/1</h4>
-              </div>
-              <div class="SCO-cell-row disappear-below-medium">
-                <h4 class="disappear-when-medium">2014-04-28</h4>
-                <h4>22:22:22</h4>
-                <h4>RO123123</h4>
+            <div class="SCO-root">
+              <div class="SCO-cell">
+                <div class="SCO-cell-row">
+                  <h1>Kasa 3</h1>
+                  <h4>1/1</h4>
+                </div>
+                <div class="SCO-cell-row disappear-below-medium">
+                  <h4 class="disappear-when-medium">2014-04-28</h4>
+                  <h4>22:22:22</h4>
+                  <h4>RO123123</h4>
+                </div>
               </div>
             </div>
+            <div class="SCO-root">
+              <div class="SCO-cell">
+                <div class="SCO-cell-row">
+                  <h1>Kasa 4</h1>
+                  <h4>1/1</h4>
+                </div>
+                <div class="SCO-cell-row disappear-below-medium">
+                  <h4 class="disappear-when-medium">2014-04-28</h4>
+                  <h4>22:22:22</h4>
+                  <h4>RO123123</h4>
+                </div>
+              </div>
+            </div>
+            <div class="SCO-root">
+              <div class="SCO-cell">
+                <div class="SCO-cell-row">
+                  <h1>Kasa 5</h1>
+                  <h4>1/1</h4>
+                </div>
+                <div class="SCO-cell-row disappear-below-medium">
+                  <h4 class="disappear-when-medium">2014-04-28</h4>
+                  <h4>22:22:22</h4>
+                  <h4>RO123123</h4>
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="swiper-slide">
             <div class="SCO-cell">
@@ -189,10 +198,12 @@
 
       <!-- Initialize Swiper -->
       <script>
-        var swiper = new Swiper(".mySwiper", { slidesPerView: 1, spaceBetween: 20, pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  } });
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1, spaceBetween: 20, pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+          }
+        });
       </script>
     </div>
   </div>
