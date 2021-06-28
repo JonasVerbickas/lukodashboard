@@ -54,8 +54,6 @@
 
 .image-col > img {
   object-fit: contain;
-  min-height: 0;
-  min-width: 0;
 }
 
 h1 {
@@ -179,12 +177,11 @@ h4 {
   color: white;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 800px) {
   .left-dashboard {
     flex-grow: 1;
     margin: 0;
     padding: 8px;
-    height: 100vh;
   }
 
   .images-to-compare {
