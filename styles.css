@@ -10,7 +10,6 @@
 .swiper-slide {
   text-align: center;
   background: white;
-  /* Center slide text vertically */
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -20,6 +19,7 @@
 .dashboard {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 .left-dashboard {
@@ -36,7 +36,9 @@
 
 .images-to-compare {
   display: flex;
+  flex-grow: 1;
   background-color: white;
+  min-height: 0;
 }
 
 .image-col {
@@ -45,7 +47,7 @@
   justify-content: center;
   text-align: center;
   margin: 6px;
-  width: 100%;
+  width: 50%;
 }
 
 .image-col > h2 {
@@ -54,6 +56,8 @@
 
 .image-col > img {
   object-fit: contain;
+  min-height: 0;
+  min-width: 0;
 }
 
 h1 {
@@ -179,22 +183,24 @@ h4 {
 
 @media only screen and (max-width: 800px) {
   .left-dashboard {
-    flex-grow: 1;
     margin: 0;
     padding: 8px;
   }
 
+  .right-dashboard {
+    overflow: scroll;
+  }
+
   .images-to-compare {
     flex-direction: column;
-    flex-grow: 1;
     overflow: hidden;
     justify-content: space-evenly;
   }
 
   .image-col {
-    flex-grow: 1;
     margin: 0;
     overflow: hidden;
+    width: 100%;
   }
 
   .disappear-while-small {
