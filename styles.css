@@ -32,6 +32,7 @@
 
 .right-dashboard {
   margin: 10px;
+  overflow: scroll;
 }
 
 .images-to-compare {
@@ -181,7 +182,7 @@ h4 {
   color: white;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-aspect-ratio: 16/16) {
   .left-dashboard {
     margin: 0;
     padding: 8px;
