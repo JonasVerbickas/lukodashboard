@@ -154,11 +154,7 @@ h4 {
 }
 
 .disappear-while-big {
-  display: none;
-}
-
-.disappear-when-medium {
-  display: none;
+  display: none !important;
 }
 
 .disappear-below-medium {
@@ -223,7 +219,7 @@ h4 {
   }
 
   .disappear-while-big {
-    display: inherit;
+    display: inherit !important;
   }
 
   .button-row > button {
@@ -269,11 +265,5 @@ h4 {
 
   .suspended-SCO > h1 {
     font-size: 150%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .disappear-when-medium {
-    display: inherit;
   }
 }
