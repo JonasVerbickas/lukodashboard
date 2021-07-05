@@ -1,6 +1,11 @@
 :root {
   --main-color: #c00200;
   --secondary-color: #fae6d6;
+  --body-margin: 8px;
+}
+
+body {
+  margin: var(--body-margin);
 }
 
 .swiper-container {
@@ -19,7 +24,7 @@
 .dashboard {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: calc(100vh - 2 * var(--body-margin));
 }
 
 .left-dashboard {
@@ -31,7 +36,7 @@
 }
 
 .right-dashboard {
-  margin: 10px;
+  margin-left: 10px;
 }
 
 .images-to-compare {
@@ -90,8 +95,8 @@ h4 {
   grid-template-columns: repeat(3, auto);
   align-items: center;
   background-color: white;
-  padding: 10px 20px;
-  grid-gap: 10px;
+  padding: 10px 16px;
+  grid-gap: 8px;
   height: 100%;
   min-width: 0;
 }
@@ -178,7 +183,7 @@ h4 {
   line-height: 60px;
   border-radius: 50%;
   text-align: center;
-  font-size: 32px;
+  font-size: xx-large;
   border: 2px solid var(--main-color);
   background-color: var(--main-color);
   color: white;
@@ -194,6 +199,16 @@ h4 {
     margin: 0;
     padding: 8px;
     min-width: 220px;
+  }
+
+  .right-dashboard {
+    margin: 0;
+  }
+
+  .number-circle {
+    font-size: large;
+    width: 40px;
+    line-height: 40px;
   }
 
   .images-to-compare {
@@ -256,8 +271,21 @@ h4 {
 }
 
 @media only screen and (max-width: 950px) {
+  h1 {
+    font-size: x-large;
+  }
+  h2 {
+    font-size: large;
+  }
+  h3 {
+    font-size: medium;
+  }
+  h4 {
+    font-size: small;
+  }
+
   .swiper-container {
-    width: 150px;
+    width: 110px;
   }
 
   .right-dashboard-header {
@@ -275,10 +303,6 @@ h4 {
 
   .disappear-below-medium {
     display: none;
-  }
-
-  .suspended-SCO > h1 {
-    font-size: 150%;
   }
 }
 
