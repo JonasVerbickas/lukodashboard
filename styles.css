@@ -193,6 +193,7 @@ h4 {
   .left-dashboard {
     margin: 0;
     padding: 8px;
+    min-width: 220px;
   }
 
   .images-to-compare {
