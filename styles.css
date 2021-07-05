@@ -3,6 +3,12 @@
   --secondary-color: #fae6d6;
 }
 
+.small-screen-main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .swiper-container {
   width: 200px;
 }
@@ -62,18 +68,26 @@
 
 h1 {
   font-size: xx-large;
+  margin: 0;
 }
 h2 {
   font-size: x-large;
   font-weight: 500;
+  margin: 0;
 }
 h3 {
   font-size: large;
   font-weight: bold;
+  margin: 0;
 }
 
 h4 {
   font-size: medium;
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
 }
 
 .description {
@@ -275,5 +289,11 @@ h4 {
 @media only screen and (min-width: 1200px) {
   .disappear-when-medium {
     display: inherit;
+  }
+}
+
+@media only screen and (max-height: 400px) and (min-aspect-ratio: 1/1) {
+  .left-dashboard {
+    height: fit-content;
   }
 }
