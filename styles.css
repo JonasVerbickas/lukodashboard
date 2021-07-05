@@ -70,8 +70,8 @@ h2 {
 h3 {
   font-size: large;
   font-weight: bold;
+  margin: 0;
 }
-
 h4 {
   font-size: medium;
 }
@@ -144,6 +144,12 @@ h4 {
 .right-dashboard h4 {
   margin: 0;
   padding: 0 5px;
+}
+
+.left-dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .right-dashboard-header {
