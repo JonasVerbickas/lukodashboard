@@ -252,6 +252,7 @@ h4 {
   background-color: var(--main-color);
   color: white;
   justify-content: center;
+  padding: 6px;
 }
 
 @media only screen and (max-width: 950px) {
