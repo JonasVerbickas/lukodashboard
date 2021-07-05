@@ -1,186 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LocalCrimePredictor</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <div class="dashboard">
-    <div class="left-dashboard">
-      <div class="disappear-while-big left-dashboard-header">
-        <h1>Kasa 5</h1>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>LocalCrimePredictor</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <div class="dashboard">
+         <div class="left-dashboard">
+            <div class="disappear-while-big left-dashboard-header">
+               <h1>Kasa 5</h1>
+            </div>
+            <div class="images-to-compare">
+               <div class="image-col">
+                  <img src="ROI.jpg"></img>
+                  <h2>Received</h2>
+               </div>
+               <div class="image-col">
+                  <img src="no_img.png"></img>
+                  <h2>Expected</h2>
+               </div>
+            </div>
+            <div class="description">
+               <div class="disappear-while-small" style="flex-direction: column; align-items: flex-start; margin-left: 10px;">
+                  <h1>Kasa 1 alarm 1/2</h1>
+                  <h3>2014-04-28 10:10:10</h3>
+               </div>
+               <div class="item-table">
+                  <div class="table-item">13:29:31</div>
+                  <div class="table-item" style="justify-self: center;">Oranges</div>
+                  <div class="table-item" style="justify-self: end;">5112</div>
+                  <div class="table-item">13:29:31</div>
+                  <div class="table-item" style="justify-self: center;">Oranges</div>
+                  <div class="table-item" style="justify-self: end;">5112</div>
+                  <div class="table-item">13:29:31</div>
+                  <div class="table-item" style="justify-self: center;">Oranges</div>
+                  <div class="table-item" style="justify-self: end;">5112</div>
+               </div>
+            </div>
+            <div class="button-row">
+               <button type="button" class="btn btn-danger btn-lg">
+               Suspend SCO
+               </button>
+               <div class="button-subrow">
+                  <button type="button" class="btn btn-primary btn-lg" style="margin-right:10px;">
+                  False alarm
+                  </button>
+                  <button type="button" class="btn btn-success btn-lg">Solved</button>
+               </div>
+            </div>
+         </div>
+         <div class="right-dashboard">
+            <div class="right-dashboard-header">
+               <h1 style="
+                  color: #C00200;
+                  text-decoration: underline;
+                  display: inline;">ALARMS
+               </h1>
+               <div class="number-circle">8</div>
+            </div>
+            <div class="swiper-container mySwiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="SCO-root selected-SCO">
+                        <div class="SCO-cell ">
+                           <div class="SCO-cell-row">
+                              <h1>Kasa 1</h1>
+                           </div>
+                           <div class="SCO-cell-row disappear-below-medium">
+                              <h4>2014-04-28</h4>
+                              <h4>11:11:11</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="SCO-root">
+                        <div class="SCO-cell">
+                           <div class="SCO-cell-row">
+                              <h1>Kasa 2</h1>
+                           </div>
+                        </div>
+                        <div class="SCO-cell-row suspended-SCO">
+                           <h1>Suspended SCO</h1>
+                        </div>
+                     </div>
+                     <div class="SCO-root">
+                        <div class="SCO-cell">
+                           <div class="SCO-cell-row">
+                              <h1>Kasa 3</h1>
+                           </div>
+                           <div class="SCO-cell-row disappear-below-medium">
+                              <h4>2014-04-28</h4>
+                              <h4>22:22:22</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="SCO-root">
+                        <div class="SCO-cell">
+                           <div class="SCO-cell-row">
+                              <h1>Kasa 4</h1>
+                           </div>
+                           <div class="SCO-cell-row disappear-below-medium">
+                              <h4>2014-04-28</h4>
+                              <h4>22:22:22</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="SCO-cell">
+                        <div class="SCO-cell-row">
+                           <h2>Kasa 11</h2>
+                        </div>
+                        <div class="SCO-cell-row disappear-below-medium">
+                           <h4 class="disappear-when-medium">2014-04-28</h4>
+                           <h4>11:11:11</h4>
+                           <h4>RO123123</h4>
+                        </div>
+                     </div>
+                     <div class="SCO-cell">
+                        <div class="SCO-cell-row">
+                           <h2>Kasa 21</h2>
+                        </div>
+                        <div class="SCO-cell-row disappear-below-medium">
+                           <h4 class="disappear-when-medium">2014-04-28</h4>
+                           <h4>22:22:22</h4>
+                           <h4>RO123123</h4>
+                        </div>
+                     </div>
+                     <div class="SCO-cell">
+                        <div class="SCO-cell-row">
+                           <h2>Kasa 31</h2>
+                        </div>
+                        <div class="SCO-cell-row disappear-below-medium">
+                           <h4 class="disappear-when-medium">2014-04-28</h4>
+                           <h4>22:22:22</h4>
+                           <h4>RO123123</h4>
+                        </div>
+                     </div>
+                     <div class="SCO-cell">
+                        <div class="SCO-cell-row">
+                           <h2>Kasa 41</h2>
+                        </div>
+                        <div class="SCO-cell-row disappear-below-medium">
+                           <h4 class="disappear-when-medium">2014-04-28</h4>
+                           <h4>22:22:22</h4>
+                           <h4>RO123123</h4>
+                        </div>
+                     </div>
+                     <div class="SCO-cell">
+                        <div class="SCO-cell-row">
+                           <h2>Kasa 51</h2>
+                        </div>
+                        <div class="SCO-cell-row disappear-below-medium">
+                           <h4 class="disappear-when-medium">2014-04-28</h4>
+                           <h4>22:22:22</h4>
+                           <h4>RO123123</h4>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+               var swiper = new Swiper(".mySwiper", {
+                 slidesPerView: 1, spaceBetween: 20, pagination: {
+                   el: '.swiper-pagination',
+                   type: 'bullets',
+                 }
+               });
+            </script>
+         </div>
       </div>
-      <div class="images-to-compare">
-        <div class="image-col">
-          <img src="ROI.jpg"></img>
-          <h2>Received</h2>
-        </div>
-        <div class="image-col">
-          <img src="no_img.png"></img>
-          <h2>Expected</h2>
-        </div>
       </div>
-      <div class="description">
-        <div class="disappear-while-small" style="flex-direction: column; align-items: flex-start; margin-left: 10px;">
-          <h1>Kasa 1 alarm 1/2</h1>
-          <h3>2014-04-28 10:10:10</h3>
-        </div>
-        <div class="item-table">
-          <div class="table-item">13:29:31</div>
-          <div class="table-item" style="justify-self: center;">Oranges</div>
-          <div class="table-item" style="justify-self: end;">5112</div>
-          <div class="table-item">13:29:31</div>
-          <div class="table-item" style="justify-self: center;">Oranges</div>
-          <div class="table-item" style="justify-self: end;">5112</div>
-          <div class="table-item">13:29:31</div>
-          <div class="table-item" style="justify-self: center;">Oranges</div>
-          <div class="table-item" style="justify-self: end;">5112</div>
-        </div>
-      </div>
-      <div class="button-row">
-        <button type="button" class="btn btn-danger btn-lg">
-          Suspend SCO
-        </button>
-        <div class="button-subrow">
-          <button type="button" class="btn btn-primary btn-lg" style="margin-right:10px;">
-            False alarm
-          </button>
-          <button type="button" class="btn btn-success btn-lg">Solved</button>
-        </div>
-      </div>
-    </div>
-    <div class="right-dashboard">
-      <div class="right-dashboard-header">
-        <h1 style="
-                    color: #C00200;
-                    text-decoration: underline;
-                    display: inline;">ALARMS
-        </h1>
-        <div class="number-circle">8</div>
-      </div>
-      <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="SCO-root selected-SCO">
-              <div class="SCO-cell ">
-                <div class="SCO-cell-row">
-                  <h1>Kasa 1</h1>
-                </div>
-                <div class="SCO-cell-row disappear-below-medium">
-                  <h4>2014-04-28</h4>
-                  <h4>11:11:11</h4>
-                </div>
-              </div>
-            </div>
-            <div class="SCO-root">
-              <div class="SCO-cell">
-                <div class="SCO-cell-row">
-                  <h1>Kasa 2</h1>
-                </div>
-              </div>
-              <div class="SCO-cell-row suspended-SCO">
-                <h1>Suspended SCO</h1>
-              </div>
-            </div>
-            <div class="SCO-root">
-              <div class="SCO-cell">
-                <div class="SCO-cell-row">
-                  <h1>Kasa 3</h1>
-                </div>
-                <div class="SCO-cell-row disappear-below-medium">
-                  <h4>2014-04-28</h4>
-                  <h4>22:22:22</h4>
-                </div>
-              </div>
-            </div>
-            <div class="SCO-root">
-              <div class="SCO-cell">
-                <div class="SCO-cell-row">
-                  <h1>Kasa 4</h1>
-                </div>
-                <div class="SCO-cell-row disappear-below-medium">
-                  <h4>2014-04-28</h4>
-                  <h4>22:22:22</h4>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-slide">
-            <div class="SCO-cell">
-              <div class="SCO-cell-row">
-                <h2>Kasa 11</h2>
-              </div>
-              <div class="SCO-cell-row disappear-below-medium">
-                <h4 class="disappear-when-medium">2014-04-28</h4>
-                <h4>11:11:11</h4>
-                <h4>RO123123</h4>
-              </div>
-            </div>
-            <div class="SCO-cell">
-              <div class="SCO-cell-row">
-                <h2>Kasa 21</h2>
-              </div>
-              <div class="SCO-cell-row disappear-below-medium">
-                <h4 class="disappear-when-medium">2014-04-28</h4>
-                <h4>22:22:22</h4>
-                <h4>RO123123</h4>
-              </div>
-            </div>
-            <div class="SCO-cell">
-              <div class="SCO-cell-row">
-                <h2>Kasa 31</h2>
-              </div>
-              <div class="SCO-cell-row disappear-below-medium">
-                <h4 class="disappear-when-medium">2014-04-28</h4>
-                <h4>22:22:22</h4>
-                <h4>RO123123</h4>
-              </div>
-            </div>
-            <div class="SCO-cell">
-              <div class="SCO-cell-row">
-                <h2>Kasa 41</h2>
-              </div>
-              <div class="SCO-cell-row disappear-below-medium">
-                <h4 class="disappear-when-medium">2014-04-28</h4>
-                <h4>22:22:22</h4>
-                <h4>RO123123</h4>
-              </div>
-            </div>
-            <div class="SCO-cell">
-              <div class="SCO-cell-row">
-                <h2>Kasa 51</h2>
-              </div>
-              <div class="SCO-cell-row disappear-below-medium">
-                <h4 class="disappear-when-medium">2014-04-28</h4>
-                <h4>22:22:22</h4>
-                <h4>RO123123</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1, spaceBetween: 20, pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-          }
-        });
-      </script>
-    </div>
-  </div>
-  </div>
-</body>
-
+   </body>
 </html>
