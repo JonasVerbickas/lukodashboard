@@ -80,7 +80,7 @@ h2 {
 }
 h3 {
   font-size: large;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -107,7 +107,7 @@ h5 {
   align-items: center;
   background-color: white;
   padding: 10px 20px;
-  grid-gap: 10px;
+  grid-gap: 8px;
   height: 100%;
 }
 
@@ -245,13 +245,18 @@ h5 {
 
 .suspended-SCO {
   background-color: var(--main-color);
+  justify-self: center;
   color: white;
   justify-content: center;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px), screen and (max-height: 600px) {
   .swiper-container {
-    width: 110px;
+    width: 105px;
+  }
+
+  .left-dashboard {
+    padding: 8px;
   }
 
   .right-dashboard {
@@ -259,7 +264,7 @@ h5 {
   }
 
   .SCO-root {
-    margin: 8px 0;
+    margin: 6px 0;
   }
 
   h1 {
@@ -268,6 +273,11 @@ h5 {
 
   h2 {
     font-size: large;
+  }
+
+  .description h3 {
+    margin-top: 2px;
+    font-weight: 500;
   }
 
   h3 {
