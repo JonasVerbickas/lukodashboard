@@ -241,10 +241,6 @@ h5 {
   .disappear-while-big {
     display: inherit;
   }
-
-  .description {
-    margin: 8px 0;
-  }
 }
 
 .suspended-SCO {
@@ -284,7 +280,7 @@ h5 {
   }
 
   .description {
-    margin: 8px 0;
+    margin: 6px 0;
   }
 
   .item-table {
