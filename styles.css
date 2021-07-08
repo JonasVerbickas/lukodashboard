@@ -34,7 +34,6 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  min-width: 0;
 }
 
 .right-dashboard {
@@ -233,7 +232,7 @@ h5 {
   .item-table {
     flex-grow: 1;
     gap: 0;
-    padding: 8px 12px;
+    padding: 6px 10px;
   }
 
   .dashboard {
@@ -265,7 +264,32 @@ h5 {
 
 @media only screen and (max-width: 950px) {
   .swiper-container {
-    width: 150px;
+    width: 120px;
+  }
+
+  .right-dashboard {
+    margin: 0;
+  }
+
+  .SCO-root {
+    margin: 8px 0;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-size: large;
+  }
+
+  .description {
+    margin: 8px 0;
+  }
+
+  .item-table {
+    font-size: small;
+    grid-gap: 3px;
   }
 
   .right-dashboard-header {
@@ -283,10 +307,6 @@ h5 {
 
   .disappear-below-medium {
     display: none;
-  }
-
-  .suspended-SCO > h1 {
-    font-size: 150%;
   }
 }
 
