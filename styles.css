@@ -174,10 +174,6 @@ h5 {
   display: none;
 }
 
-.disappear-when-medium {
-  display: none;
-}
-
 .disappear-below-medium {
   display: inherit;
 }
@@ -250,7 +246,8 @@ h5 {
   justify-content: center;
 }
 
-@media only screen and (max-width: 900px), screen and (max-height: 600px) {
+@media only screen and (max-width: 900px) and (max-aspect-ratio: 16/16),
+  only screen and (max-height: 600px) and (min-aspect-ratio: 16/16) {
   .swiper-container {
     width: 105px;
   }
@@ -314,11 +311,5 @@ h5 {
 
   .disappear-below-medium {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .disappear-when-medium {
-    display: inherit;
   }
 }
