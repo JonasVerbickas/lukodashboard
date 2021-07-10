@@ -64,7 +64,12 @@
   margin: 4px 0;
 }
 
-.image-col > img {
+.image-col div{
+  height: 100%;
+  margin: auto;
+}
+
+.image-col img {
   width: 100%;
   object-fit: contain;
   min-height: 0;
