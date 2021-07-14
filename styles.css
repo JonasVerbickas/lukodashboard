@@ -1,11 +1,22 @@
+:root {
+  --main-color: #c00200;
+  --secondary-color: #fae6d6;
+  --swiper-width: 200px;
+}
+
+.small-screen-main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .swiper-container {
-  width: 200px;
+  width: var(--swiper-width);
 }
 
 .swiper-slide {
   text-align: center;
   background: white;
-  /* Center slide text vertically */
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -15,6 +26,7 @@
 .dashboard {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 .left-dashboard {
@@ -22,17 +34,20 @@
   padding: 12px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  width: calc(100vw - var(--swiper-width));
 }
 
 .right-dashboard {
   margin: 10px;
+  overflow-y: scroll;
 }
 
 .images-to-compare {
   display: flex;
-  background-color: white;
   flex-grow: 1;
+  width: 100%;
+  background-color: white;
+  min-height: 0;
 }
 
 .image-col {
@@ -41,7 +56,7 @@
   justify-content: center;
   text-align: center;
   margin: 6px;
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 
@@ -50,6 +65,7 @@
 }
 
 .image-col > img {
+  width: 100%;
   object-fit: contain;
   min-height: 0;
   min-width: 0;
@@ -57,18 +73,26 @@
 
 h1 {
   font-size: xx-large;
+  margin: 0;
 }
 h2 {
   font-size: x-large;
   font-weight: 500;
+  margin: 0;
 }
 h3 {
   font-size: large;
-  font-weight: bold;
+  font-weight: 600;
+  margin: 0;
 }
 
 h4 {
   font-size: medium;
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
 }
 
 .description {
@@ -85,7 +109,7 @@ h4 {
   align-items: center;
   background-color: white;
   padding: 10px 20px;
-  grid-gap: 10px;
+  grid-gap: 8px;
   height: 100%;
 }
 
@@ -151,10 +175,6 @@ h4 {
   display: none;
 }
 
-.disappear-when-medium {
-  display: none;
-}
-
 .disappear-below-medium {
   display: inherit;
 }
@@ -170,24 +190,23 @@ h4 {
   color: white;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-aspect-ratio: 16/16) {
   .left-dashboard {
-    flex-grow: 1;
     margin: 0;
     padding: 8px;
   }
 
   .images-to-compare {
     flex-direction: column;
-    flex-grow: 1;
     overflow: hidden;
     justify-content: space-evenly;
   }
 
   .image-col {
-    flex-grow: 1;
     margin: 0;
     overflow: hidden;
+    width: 100%;
+    height: 50%;
   }
 
   .disappear-while-small {
@@ -205,8 +224,6 @@ h4 {
 
   .item-table {
     flex-grow: 1;
-    gap: 0;
-    padding: 8px 12px;
   }
 
   .dashboard {
@@ -216,38 +233,72 @@ h4 {
   .disappear-while-big {
     display: inherit;
   }
-
-  .button-row > button {
-    padding: 5px 0;
-  }
-
-  .button-subrow > button {
-    padding: 8px 0;
-  }
-
-  .description {
-    margin: 8px 0;
-  }
 }
 
 .suspended-SCO {
   background-color: var(--main-color);
+  justify-self: center;
   color: white;
   justify-content: center;
 }
 
-@media only screen and (max-width: 950px) {
-  .swiper-container {
-    width: 150px;
+@media only screen and (max-width: 800px) and (max-aspect-ratio: 16/16),
+  only screen and (max-height: 700px) and (min-aspect-ratio: 16/16) {
+  :root {
+    --swiper-width: 110px;
+  }
+
+  .left-dashboard {
+    padding: 8px;
+  }
+
+  .right-dashboard {
+    margin: 0;
+  }
+
+  .SCO-root {
+    margin: 6px 0;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-size: large;
+  }
+
+  .description h3 {
+    margin-top: 2px;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: medium;
+  }
+
+  button {
+    font-size: medium !important;
+    padding: 6px 0 !important;
+  }
+
+  .description {
+    margin: 6px 0;
+  }
+
+  .item-table {
+    font-size: small;
+    grid-gap: 4px;
+    padding: 6px 10px;
   }
 
   .right-dashboard-header {
     flex-direction: column-reverse;
   }
-  .right-dashboard .SCO-cell {
+  .SCO-cell {
     font-size: small;
-    height: 100px;
   }
+
   .SCO-cell-row {
     flex-direction: column;
     align-items: flex-start;
@@ -256,15 +307,5 @@ h4 {
 
   .disappear-below-medium {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .disappear-when-medium {
-    display: inherit;
-  }
-
-  .swiper-container {
-    width: 300px;
   }
 }
