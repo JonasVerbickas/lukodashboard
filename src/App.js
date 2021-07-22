@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="dashboard">
       <div className="left-dashboard">
-        <div className="headers disappear-while-big">
+        <div className="headers disappear-while-horizontal">
           <h1>Kasa</h1>
           <h3>RO123123</h3>
         </div>

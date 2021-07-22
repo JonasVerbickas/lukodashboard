@@ -171,7 +171,7 @@ h5 {
   justify-content: center;
 }
 
-.disappear-while-big {
+.disappear-while-horizontal {
   display: none;
 }
 
@@ -209,7 +209,7 @@ h5 {
     height: 50%;
   }
 
-  .disappear-while-small {
+  .disappear-while-vertical {
     display: none;
   }
 
@@ -230,7 +230,7 @@ h5 {
     margin: 0;
   }
 
-  .disappear-while-big {
+  .disappear-while-horizontal {
     display: inherit;
   }
 }
