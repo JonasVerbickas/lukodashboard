@@ -2,6 +2,7 @@
   --main-color: #c00200;
   --secondary-color: #fae6d6;
   --swiper-width: 200px;
+  --vertical-buttons: 100px;
 }
 
 .small-screen-main-header {
@@ -193,7 +194,6 @@ h5 {
 @media only screen and (max-aspect-ratio: 16/16) {
   .left-dashboard {
     margin: 0;
-    padding: 8px;
   }
 
   .images-to-compare {
@@ -216,6 +216,12 @@ h5 {
   .button-row {
     flex-direction: column;
     align-items: stretch;
+    height: var(--vertical-buttons);
+    margin: 0 4px;
+  }
+
+  .dashboard {
+    height: calc(100vh - var(--vertical-buttons));
   }
 
   .button-subrow {
@@ -283,7 +289,7 @@ h5 {
   }
 
   .description {
-    margin: 6px 0;
+    margin: 6px 0 0 0;
   }
 
   .item-table {
