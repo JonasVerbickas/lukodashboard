@@ -2,7 +2,6 @@
   --main-color: #c00200;
   --secondary-color: #fae6d6;
   --swiper-width: 200px;
-  --vertical-buttons: 100px;
 }
 
 .small-screen-main-header {
@@ -24,10 +23,16 @@
   align-items: stretch;
 }
 
-.dashboard {
+.parent-dashboard {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.child-dashboard {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  flex: 1 1 0;
 }
 
 .left-dashboard {
@@ -45,20 +50,24 @@
 
 .images-to-compare {
   display: flex;
-  flex-grow: 1;
+  flex: 1 1 0;
   width: 100%;
   background-color: white;
   min-height: 0;
+  justify-content: space-around;
+  align-items: stretch;
 }
 
 .image-col {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  max-height: 100%;
+  min-height: 0;
+  min-width: 0;
   justify-content: center;
   text-align: center;
   margin: 6px;
-  width: 50%;
-  height: 100%;
 }
 
 .image-col > h2 {
@@ -66,7 +75,6 @@
 }
 
 .image-col > img {
-  width: 100%;
   object-fit: contain;
   min-height: 0;
   min-width: 0;
@@ -198,15 +206,12 @@ h5 {
 
   .images-to-compare {
     flex-direction: column;
-    overflow: hidden;
     justify-content: space-evenly;
   }
 
   .image-col {
     margin: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 50%;
+    max-height: 50%;
   }
 
   .disappear-while-vertical {
@@ -216,12 +221,7 @@ h5 {
   .button-row {
     flex-direction: column;
     align-items: stretch;
-    height: var(--vertical-buttons);
     margin: 0 4px;
-  }
-
-  .dashboard {
-    height: calc(100vh - var(--vertical-buttons));
   }
 
   .button-subrow {
@@ -232,12 +232,12 @@ h5 {
     flex-grow: 1;
   }
 
-  .dashboard {
-    margin: 0;
-  }
-
   .disappear-while-horizontal {
     display: inherit;
+  }
+
+  .description {
+    margin: 6px 0 0 0;
   }
 }
 
@@ -286,10 +286,6 @@ h5 {
   button {
     font-size: medium !important;
     padding: 6px 0 !important;
-  }
-
-  .description {
-    margin: 6px 0 0 0;
   }
 
   .item-table {
